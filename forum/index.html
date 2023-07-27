@@ -13,8 +13,8 @@
 </head>
 <body>
     <header class="mb-5">
-        <nav id="navbar-top" class="navbar pt-3 pb-3 ps-5">
-            <div class="container-fluid">
+        <nav id="navbar-top" class="navbar pt-3 pb-3">
+            <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="img/logo-cps.png" alt="Logo" width="80" class="me-4 d-inline-block align-text-top">
                     <span id="header-title" class="mt-1 text-white">Fórum</span>
@@ -67,12 +67,12 @@
     </header>
     <main class="container">
         <div class="row">
-            <div class="col-3 sections">
+            <div id="sections-col" class="col-3 sections">
                 <div class="sections-map-header">
-                    <h5 class="sections-title">Seções</h5>
-                    <span class="retract-btn">< Recolher</span>
+                    <h5 id="sections-tit" class="sections-title">Seções</h5>
+                    <span id="retract-btn" class="retract-btn">< Recolher</span>
                 </div>
-                <ul class="sections-map">
+                <ul id="sections-map" class="sections-map">
                     <li class="section-sub-title">
                         Matérias
                         <ul>
@@ -115,7 +115,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-6 feed">
+            <div id="feed" class="col-6 feed">
                 <section class="staff-topic mb-5">
                     <h5 class="staff-topic-title">Mensagens do Fórum CPS</h5>
                     <div class="topic">
@@ -151,7 +151,7 @@
                     </div>
                 </section>
             </div>
-            <div class="col-3 recent-feed">
+            <div id="recent-feed" class="col-3 recent-feed">
                 <h5 class="recent-feed-title">Posts mais recentes</h5>
                 <div class="recent-topic">
                     <div class="recent-topic-header">
@@ -163,8 +163,12 @@
                         <span class="recent-topic-info-aparter"></span>
                         <div>
                             <span class="recent-topic-author">Postado por <span class="topic-author-name">Arthur Martins Pereira</span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 </body>
+<script src="js/index.js"></script>
 </html>
